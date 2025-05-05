@@ -2,13 +2,23 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Sample Request-Response</title>
+  <title>Sample Request-Response & OCR Tool</title>
 </head>
 <body>
   <h1>メッセージ送信サンプル</h1>
   <input type="text" id="input" placeholder="Type a message" />
   <button id="send">Send</button>
   <p id="response"></p>
-  <script src="static/script.js"></script>
+
+  <hr />
+
+  <h2>画像アップロード & OCR</h2>
+  <input type="file" id="imageInput" accept="image/*" />
+  <button id="upload">Upload</button>
+  <h3>抽出テキスト</h3>
+  <pre id="ocrResult"></pre>
+  <p id="csvLink"></p>
+
+  <script src="/static/script.js"></script>
 </body>
 </html>
